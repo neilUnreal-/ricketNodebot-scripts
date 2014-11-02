@@ -1,7 +1,8 @@
 // Neil Ganotisi
 // November 1, 2014
 // Grab the API key from http://xboxapi.com
-// Possible Security Conflict: XboxAPI requires an active Microsoft Account login with your UID/Pass. I suggest creating a throwaway account for this service.
+// Possible Security Conflict: XboxAPI requires an active Microsoft Account login with your UID/Pass. 
+// I suggest creating a throwaway Microsoft account for this service.
 
 var request = require('request');
 
