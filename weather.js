@@ -1,7 +1,13 @@
+// Neil Ganotisi
+// November 1, 2014
+// Get your API key at http://api.wunderground.com
+
 var request = require('request');
 
+var apiKey = 'YOUR_API_KEY_HERE';
+
 function generateURL(location) {
-	var urlPrefix = "http://api.wunderground.com/api/9e4f66079bdf2f7b/conditions/forecast/astronomy/q/";
+	var urlPrefix = "http://api.wunderground.com/api/" + apiKey + "/conditions/forecast/astronomy/q/";
 	JSON.stringify(location);
 	var searchParam = '';
 	var format = '.json';
@@ -9,7 +15,6 @@ function generateURL(location) {
 	searchParam = location.replace(/ /g, "_");
 
 	var fullUrl = urlPrefix + searchParam + format;
-	console.log(fullUrl);
 	return fullUrl;
 }
 
